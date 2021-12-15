@@ -9,6 +9,7 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { FooterComponent } from './navegacao/footer/footer.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
+import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 
 
 
@@ -19,7 +20,8 @@ import { MenuComponent } from './navegacao/menu/menu.component';
     HomeComponent,
     FooterComponent,
     SobreComponent,
-    ContatoComponent
+    ContatoComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
