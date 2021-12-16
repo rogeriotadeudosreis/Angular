@@ -9,5 +9,5 @@ export const rootRouterConfig: Routes = [
     { path: 'contato', component: ContatoComponent },
     { path: 'home', component: HomeComponent },
     { path: 'sobre', component: SobreComponent },
-    {path: 'feature-data-binding', component:DataBindingComponent}
+    {path: 'features-data-binding', component:DataBindingComponent}
 ];

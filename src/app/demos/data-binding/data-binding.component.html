@@ -1,1 +1,46 @@
-<p>data-binding works!</p>
+<div class="container main-container">
+    <br>
+    <br>
+    <br>
+    <h3>Interpolation</h3>
+    <!-- <p>O número de clicks e: {{ contadorClick}}</p> -->
+    <p [ngClass]="{
+        'btn btn-secundary': contadorClick < 3,
+        'btn btn-success': contadorClick >= 3,
+        'btn btn-warning': contadorClick >= 5,
+        'btn btn-danger': contadorClick >= 9
+    }">O número de clicks e: {{ contadorClick}}</p>
+    <hr>
+
+    <h3>Property Binding</h3>
+
+    <button class="btn btn-info" [disabled]="contadorClick >= 10">Info</button><br><br>
+    <img [src]="urlImagem" height="50px" width="50px" alt="">
+    <hr>
+
+    <h3>Event Binding</h3>
+    <button class="btn btn-primary" (click)="contador()">Adicionar Click</button>
+    <hr>
+    <button type="button" class="btn btn-dark" (click)="zerarContadorClick()">Zerar</button>
+    <hr>
+
+    <h3>Two-way Binding</h3>
+
+    <!-- Primeira forma de fazer um too-way binding -->
+    <!-- <Input type="text" (keyup)="keyUp($event)" placeholder="Digite um nome: "><br> 
+     <label>O nome digitado foi: {{nome}}</label> -->
+
+    <!-- Segunda forma de fazer um too-way binding -->
+    <!-- <input type="text" [ngModel]="nome" (ngModelChange)='nome = $event' placeholder="Digite um nome: ">
+    <br>
+    <br>
+    <label>O nome digitado foi: {{ nome }} </label> -->
+    <!-- <hr> -->
+
+    <!-- Terceira forma e mais elegante de fazer um too-way binding -->
+    <input type="text" [(ngModel)]="nome" placeholder="Digite um nome: ">
+    <br>
+    <br>
+    <label class="{{ nome }}">O nome digitado foi: {{ nome }} </label>
+    <hr>
+</div>
