@@ -9,6 +9,7 @@ export class DataBindingComponent {
 
   public contadorClick: number = 0;
   urlImagem: string = "https://angular.io/assets/images/logos/angular/angular.svg";
+  interpolation: string = "Este pequeno texto está no componente.ts";
   nome: string = "";
 
   public contador() {
